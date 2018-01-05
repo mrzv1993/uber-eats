@@ -2,8 +2,13 @@
 ---------------------------------------------------------------------------------- */
 
 * {
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+button {
+    border: 0;
 }
 
 /* /Reset
@@ -12,19 +17,19 @@
 /* Grid
 ---------------------------------------------------------------------------------- */
 
-/* XS — это экраны до 576 пикселей (смартфоны) */
+/* xs — от 320 (смартфоны) */
 
 @media (min-width: 320px) {}
 
-/* SM — от 576 до 768 (большие смартфоны и планшеты в вертикальной ориентации) */
+/* sm — от 576 (большие смартфоны и планшеты в вертикальной ориентации) */
 
 @media (min-width: 576px) {}
 
-/* MD — от 768 до 991 (планшеты в горизонтальной) */
+/* md — от 768 (планшеты в горизонтальной) */
 
 @media (min-width: 768px) {}
 
-/* LG — от 991 до 1200 (десктопы) */
+/* lg — от 991 (десктопы) */
 
 @media (min-width: 991px) {}
 
@@ -38,17 +43,20 @@
 /* Total
 ---------------------------------------------------------------------------------- */
 
-.block-1 {
-    background-color: antiquewhite;
-    height: 100px;
+body {
+    min-width: 320px;
+    color: #1D1D1D;
+    line-height: 1.25;
 }
 
-.block-2 {
-    background-color: beige;
-    height: 100px;
+button {
+    padding: 8px 16px;
+    height: 40px;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
 }
-
-
 
 /* /Total
 ---------------------------------------------------------------------------------- */
@@ -56,11 +64,73 @@
 /* Layout
 ---------------------------------------------------------------------------------- */
 
+.header {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.search {
+    margin-top: 40px;
+}
+
+.delivery-xs {
+    margin-top: 24px;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.footer {
+    margin-top: 48px;
+    background-color: #262626;
+}
+
 /* /Layout
+---------------------------------------------------------------------------------- */
+
+/* Sections
+---------------------------------------------------------------------------------- */
+
+.navbar {
+    height: 72px;
+}
+
+.navigation {
+    display: flex;
+
+    align-items: center;
+}
+
+.menu-items {
+    margin-top: 16px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/* /Sections
 ---------------------------------------------------------------------------------- */
 
 /* Blocks
 ---------------------------------------------------------------------------------- */
+
+.delivery-md {}
+
+@media (max-width: 666px) {
+
+    .delivery-md {
+        display: none;
+    }
+}
+
+.card {
+    margin-bottom: 16px;
+    background-color: azure;
+}
+
+.card-img {
+    width: 100%;
+}
 
 /* /Blocks
 ---------------------------------------------------------------------------------- */
@@ -68,11 +138,115 @@
 /* Elements
 ---------------------------------------------------------------------------------- */
 
+.basket {
+    display: inline-block;
+    margin-left: 24px;
+    width: 18px;
+    height: 22px;
+    background-image: url(/img/basket.svg);
+    background-size: 18px 22px;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+
+    .basket {
+        display: none;
+    }
+}
+
+/* ---------------   DELIVERY INPUTS   --------------- */
+
+.delivery-input {
+    padding-left: 28px;
+    width: 256px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    background-image: url(/img/location.svg);
+    background-position: left;
+    background-position: 8px;
+    background-repeat: no-repeat;
+}
+
+/* ---------------   /DELIVERY INPUTS   --------------- */
+
 /* /Elements
 ---------------------------------------------------------------------------------- */
 
-/* Modifiers
+/* Modifiers-element
 ---------------------------------------------------------------------------------- */
 
-/* /Modifiers
+/* ---------------   LOGOS   --------------- */
+
+/* Dark Logo   --------------- */
+
+.logo-dark {
+    display: inline-block;
+    background-image: url(/img/logo-dark.svg);
+    background-repeat: no-repeat;
+}
+
+.logo-dark-s_xs {
+    width: 104px;
+    height: 12px;
+    background-size: 104px 12px;
+}
+
+@media (min-width: 991px) {
+
+    .logo-dark-s_lg {
+        width: 128px;
+        height: 16px;
+        background-size: 128px 16px;
+    }
+
+}
+
+/* ---------------   /LOGOS   --------------- */
+
+/* ---------------   BTNS   --------------- */
+
+/* White Btn   --------------- */
+
+.btn-white {
+    border: 1px solid #E0E0E0;
+    background-color: #FFFFFF;
+    color: #1D1D1D;
+}
+
+.btn-white:hover {
+    border: 1px solid transparent;
+    background-color: #59BD5A;
+    color: #FFFFFF;
+}
+
+.btn-white:active {
+    background-color: #4ea54f;
+}
+
+/* Black Btn   --------------- */
+
+.btn-black {
+    margin-left: 16px;
+    border: 1px solid transparent;
+    background-color: #262626;
+    color: #FFFFFF;
+}
+
+.btn-black:hover {
+    background-color: #383838;
+}
+
+.btn-black:active {
+    background-color: #000000;
+}
+
+/* ---------------   /BTNS   --------------- */
+
+.card-p {
+    padding: 0 8px;
+}
+
+/* /Modifiers-element
 ---------------------------------------------------------------------------------- */

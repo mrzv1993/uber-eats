@@ -3,8 +3,9 @@
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 16px;
+    padding-left: 16px;
+    max-width: 1200px;
 }
 
 .row {
@@ -21,8 +22,6 @@
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -1rem;
-    margin-left: -1rem;
 }
 
 .row.reverse {

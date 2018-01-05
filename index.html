@@ -6,51 +6,184 @@
     <title>Uber Eats</title>
     <link rel="stylesheet" href="/css/flexboxgrid.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="block-1">1222</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="block-2">Responsive</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="block-1">Responsive</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="block-2">Responsive</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="block-1">1222</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="block-2">Responsive</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="block-1">Responsive</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="block-2">Responsive</div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="block-2">Responsive</div>
-            </div>
-
+    <header class="header">
+        <div class="container-fluid">
+            <section class="navbar row between-xs middle-xs">
+                <a href="#" class="logo-dark logo-dark-s_xs logo-dark-s_lg"></a>
+                <div class="delivery-md">
+                    <button type="button" class="btn-white">ASAP</button>
+                    <span>to</span>
+                    <input type="text" placeholder="Text your adress" class="delivery-input">
+                </div>
+                <section class="navigation">
+                    <button type="button" class="btn-white">Sign In</button>
+                    <button type="button" class="btn-black">Register</button>
+                    <a href="#" class="basket"></a>
+                </section>
+            </section>
         </div>
-    </div>
+    </header>
+    <section class="search">
+        <div class="container-fluid">
+            <input type="text" placeholder="Search for restauran">
+        </div>
+    </section>
+    <section class="delivery-xs">
+        <div class="container-fluid">
+            <div class="row">
+                <section class="delivery-xs-when col-xs-4">
+                    <span>When</span>
+                    <button type="button" class="btn-white">ASAP</button>
+                </section>
+                <section class="delivery-xs-to col-xs-8">
+                    <span>To</span>
+                    <input type="text" placeholder="Text your adress" class="delivery-input">
+                </section>
+            </div>
+        </div>
+    </section>
+    <main class="menu">
+        <div class="container-fluid">
+            <h2>Moscow Restaurants</h2>
+            <div class="row menu-items">
 
+                <div class="card-p col-xs-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/img/card-img/1-c@1x.png" srcset="/img/card-img/1-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
+                        <h2>Макдоналдс — Газетный</h2>
+                        <p>₽₽ • Бургеры</p>
+                        <p>25 – 35 Min</p>
+                    </div>
+                </div>
+
+                <div class="card-p col-xs-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/img/card-img/2-c@1x.png" srcset="/img/card-img/2-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
+                        <h2>DimSum — ЦДМ</h2>
+                        <p>₽ • Японская • Китайская • Азиатская</p>
+                        <p>40 – 50 Min</p>
+                    </div>
+
+                </div>
+
+                <div class="card-p col-xs-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/img/card-img/3-c@1x.png" srcset="/img/card-img/3-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
+                        <h2>ДвижОК — Манежная</h2>
+                        <p>₽ • Американская • Европейская</p>
+                        <p>35 – 45 Min</p>
+                    </div>
+
+                </div>
+
+                <div class="card-p col-xs-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/img/card-img/4-c@1x.png" srcset="/img/card-img/4-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
+                        <h2>НЯ — NHA</h2>
+                        <p>₽₽ • Вьетнамская</p>
+                        <p>30 – 40 Min</p>
+                    </div>
+
+                </div>
+
+                <div class="card-p col-xs-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/img/card-img/5-c@1x.png" srcset="/img/card-img/5-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
+                        <h2>Точка Дзы — Цветной</h2>
+                        <p>₽₽ • Вьетнамская</p>
+                        <p>40 – 50 Min</p>
+                    </div>
+
+                </div>
+
+                <div class="card-p col-xs-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/img/card-img/6-c@1x.png" srcset="/img/card-img/6-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
+                        <h2>Cinnabon</h2>
+                        <p>₽ • Выпечка • Десерты • Капкейки</p>
+                        <p>25 – 35 Min</p>
+                    </div>
+                </div>
+
+                <div class="card-p col-xs-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/img/card-img/7-c@1x.png" srcset="/img/card-img/7-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
+                        <h2>PIZZELOVE</h2>
+                        <p>₽₽ • Пицца</p>
+                        <p>15 – 25 Min</p>
+                    </div>
+                </div>
+
+                <div class="card-p col-xs-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/img/card-img/8-c@1x.png" srcset="/img/card-img/8-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
+                        <h2>Zю кафе — Тверская</h2>
+                        <p>₽₽ • Японская</p>
+                        <p>25 – 35 Min</p>
+                    </div>
+                </div>
+
+                <div class="card-p col-xs-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="/img/card-img/9-c@1x.png" srcset="/img/card-img/9-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
+                        <h2>Bar BQ Cafe — Манежная</h2>
+                        <p>₽₽₽ • Европейская</p>
+                        <p>30 – 40 Min</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid">
+            <section class="footer-logo">
+                <a href="#" class="logo-dark logo-dark-s_xs logo-dark-s_lg"></a>
+            </section>
+            <section class="footer-links">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="select-lang">English</div>
+                        <p>#UberRats</p>
+                        <ul>
+                            <li>fb</li>
+                            <li>tw</li>
+                            <li>inst</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <ul>
+                            <li>About UberEats</li>
+                            <li>Become a Delivery Partner</li>
+                            <li>Become a restaurant Partner</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <ul>
+                            <li>See all cities</li>
+                            <li>Pricing</li>
+                            <li>Help</li>
+                            <li>FAQs</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="marketplaces">
+                <a href="#">
+                    <div class="maket-item"></div>
+                </a>
+                <a href="#">
+                    <div class="maket-item"></div>
+                </a>
+            </section>
+            <section class="footer-copyryght">123</section>
+        </div>
+    </footer>
 </body>
 
 </html>
