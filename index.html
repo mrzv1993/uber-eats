@@ -17,7 +17,7 @@
                 <a href="#" class="logo-dark logo-dark-s_xs logo-dark-s_lg"></a>
                 <div class="delivery-md">
                     <button type="button" class="btn-white">ASAP</button>
-                    <span>to</span>
+                    <span class="delivery-md__txt">to</span>
                     <input type="text" placeholder="Text your adress" class="delivery-input">
                 </div>
                 <section class="navigation">
@@ -30,23 +30,19 @@
     </header>
     <section class="search">
         <div class="container-fluid">
-            <input type="text" placeholder="Search for restauran">
+            <input type="text" placeholder="Search for restauran" class="search-input">
         </div>
     </section>
-    <section class="delivery-xs">
-        <div class="container-fluid">
-            <div class="row">
-                <section class="delivery-xs-when col-xs-4">
-                    <span>When</span>
-                    <button type="button" class="btn-white">ASAP</button>
-                </section>
-                <section class="delivery-xs-to col-xs-8">
-                    <span>To</span>
-                    <input type="text" placeholder="Text your adress" class="delivery-input">
-                </section>
-            </div>
-        </div>
-    </section>
+    <div class="container-fluid delivery-xs">
+        <section class="delivery-xs-when">
+            <span class="delivery-xs__txt">When</span>
+            <button type="button" class="btn-white">ASAP</button>
+        </section>
+        <section class="delivery-xs-to">
+            <span class="delivery-xs__txt">To</span>
+            <input type="text" placeholder="Text your adress" class="delivery-input delivery-xs-input">
+        </section>
+    </div>
     <main class="menu">
         <div class="container-fluid">
             <h2>Moscow Restaurants</h2>
@@ -56,8 +52,8 @@
                     <div class="card">
                         <img src="/img/card-img/1-c@1x.png" srcset="/img/card-img/1-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
                         <h2>Макдоналдс — Газетный</h2>
-                        <p>₽₽ • Бургеры</p>
-                        <p>25 – 35 Min</p>
+                        <p class="menu-categoty">₽₽ • Бургеры</p>
+                        <p class="menu-time">25 – 35 Min</p>
                     </div>
                 </div>
 
@@ -65,8 +61,8 @@
                     <div class="card">
                         <img src="/img/card-img/2-c@1x.png" srcset="/img/card-img/2-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
                         <h2>DimSum — ЦДМ</h2>
-                        <p>₽ • Японская • Китайская • Азиатская</p>
-                        <p>40 – 50 Min</p>
+                        <p class="menu-categoty">₽ • Японская • Китайская • Азиатская</p>
+                        <p class="menu-time">40 – 50 Min</p>
                     </div>
 
                 </div>
@@ -75,8 +71,8 @@
                     <div class="card">
                         <img src="/img/card-img/3-c@1x.png" srcset="/img/card-img/3-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
                         <h2>ДвижОК — Манежная</h2>
-                        <p>₽ • Американская • Европейская</p>
-                        <p>35 – 45 Min</p>
+                        <p class="menu-categoty">₽ • Американская • Европейская</p>
+                        <p class="menu-time">35 – 45 Min</p>
                     </div>
 
                 </div>
@@ -85,8 +81,8 @@
                     <div class="card">
                         <img src="/img/card-img/4-c@1x.png" srcset="/img/card-img/4-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
                         <h2>НЯ — NHA</h2>
-                        <p>₽₽ • Вьетнамская</p>
-                        <p>30 – 40 Min</p>
+                        <p class="menu-categoty">₽₽ • Вьетнамская</p>
+                        <p class="menu-time">30 – 40 Min</p>
                     </div>
 
                 </div>
@@ -95,8 +91,8 @@
                     <div class="card">
                         <img src="/img/card-img/5-c@1x.png" srcset="/img/card-img/5-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
                         <h2>Точка Дзы — Цветной</h2>
-                        <p>₽₽ • Вьетнамская</p>
-                        <p>40 – 50 Min</p>
+                        <p class="menu-categoty">₽₽ • Вьетнамская</p>
+                        <p class="menu-time">40 – 50 Min</p>
                     </div>
 
                 </div>
@@ -105,8 +101,8 @@
                     <div class="card">
                         <img src="/img/card-img/6-c@1x.png" srcset="/img/card-img/6-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
                         <h2>Cinnabon</h2>
-                        <p>₽ • Выпечка • Десерты • Капкейки</p>
-                        <p>25 – 35 Min</p>
+                        <p class="menu-categoty">₽ • Выпечка • Десерты • Капкейки</p>
+                        <p class="menu-time">25 – 35 Min</p>
                     </div>
                 </div>
 
@@ -114,8 +110,8 @@
                     <div class="card">
                         <img src="/img/card-img/7-c@1x.png" srcset="/img/card-img/7-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
                         <h2>PIZZELOVE</h2>
-                        <p>₽₽ • Пицца</p>
-                        <p>15 – 25 Min</p>
+                        <p class="menu-categoty">₽₽ • Пицца</p>
+                        <p class="menu-time">15 – 25 Min</p>
                     </div>
                 </div>
 
@@ -123,8 +119,8 @@
                     <div class="card">
                         <img src="/img/card-img/8-c@1x.png" srcset="/img/card-img/8-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
                         <h2>Zю кафе — Тверская</h2>
-                        <p>₽₽ • Японская</p>
-                        <p>25 – 35 Min</p>
+                        <p class="menu-categoty">₽₽ • Японская</p>
+                        <p class="menu-time">25 – 35 Min</p>
                     </div>
                 </div>
 
@@ -132,8 +128,8 @@
                     <div class="card">
                         <img src="/img/card-img/9-c@1x.png" srcset="/img/card-img/9-c@2x.png 2x" alt="Макдоналдс — Газетный" class="card-img">
                         <h2>Bar BQ Cafe — Манежная</h2>
-                        <p>₽₽₽ • Европейская</p>
-                        <p>30 – 40 Min</p>
+                        <p class="menu-categoty">₽₽₽ • Европейская</p>
+                        <p class="menu-time">30 – 40 Min</p>
                     </div>
                 </div>
 
@@ -143,45 +139,57 @@
     <footer class="footer">
         <div class="container-fluid">
             <section class="footer-logo">
-                <a href="#" class="logo-dark logo-dark-s_xs logo-dark-s_lg"></a>
+                <a href="#" class="logo-white"></a>
             </section>
             <section class="footer-links">
                 <div class="row">
                     <div class="col-xs-12 col-md-4">
-                        <div class="select-lang">English</div>
-                        <p>#UberRats</p>
-                        <ul>
-                            <li>fb</li>
-                            <li>tw</li>
-                            <li>inst</li>
+                        <div class="select-lang">
+                            <div class="lang-icon"></div>
+                            <p>English</p>
+                            <div class="select-icon"></div>
+                        </div>
+                        <p class="hashtag"><span class="hashtag-green">#</span> UberRats</p>
+                        <ul class="social">
+                            <li><a href="#" class="facebook"></a></li>
+                            <li><a href="#" class="twitter"></a></li>
+                            <li><a href="#" class="instagram"></a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <ul>
-                            <li>About UberEats</li>
-                            <li>Become a Delivery Partner</li>
-                            <li>Become a restaurant Partner</li>
+                        <ul class="menu-links">
+                            <li><a href="#">About UberEats</a></li>
+                            <li><a href="#">Become a Delivery Partner</a></li>
+                            <li><a href="#">Become a restaurant Partner</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <ul>
-                            <li>See all cities</li>
-                            <li>Pricing</li>
-                            <li>Help</li>
-                            <li>FAQs</li>
+                        <ul class="menu-links">
+                            <li><a href="#">See all cities</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">FAQs</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section class="marketplaces">
-                <a href="#">
-                    <div class="maket-item"></div>
-                </a>
-                <a href="#">
-                    <div class="maket-item"></div>
-                </a>
+                <a href="#" class="marketplace-item marketplace-appstore"></a>
+                <a href="#" class="marketplace-item marketplace-googleplay"></a>
             </section>
-            <section class="footer-copyryght">123</section>
+            <section class="footer-copyright">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <p class="copyright__txt">© 2017 Uber Technolo Ink.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <a href="#">Privacy</a>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </section>
         </div>
     </footer>
 </body>

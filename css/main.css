@@ -11,6 +11,14 @@ button {
     border: 0;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* /Reset
 ---------------------------------------------------------------------------------- */
 
@@ -47,6 +55,7 @@ body {
     min-width: 320px;
     color: #1D1D1D;
     line-height: 1.25;
+    font-family: 'Roboto', sans-serif;
 }
 
 button {
@@ -108,6 +117,31 @@ button {
     margin-right: -8px;
 }
 
+.footer-logo {
+    padding: 56px 0 40px 0;
+    border-bottom: 1px solid #333333;
+}
+
+.footer-links {
+    margin-top: 32px;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 40px;
+}
+
+.marketplaces {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 40px;
+}
+
+.footer-copyright {
+    padding: 40px 0;
+    color: #3B3B3B;
+    font-size: 11px;
+}
+
+
 /* /Sections
 ---------------------------------------------------------------------------------- */
 
@@ -116,20 +150,63 @@ button {
 
 .delivery-md {}
 
-@media (max-width: 666px) {
+@media (max-width: 768px) {
 
     .delivery-md {
         display: none;
     }
 }
 
+.delivery-xs {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+
+    .delivery-xs {
+        display: none;
+    }
+}
+
+.delivery-xs-when {
+    margin-right: 16px;
+}
+
+.delivery-xs-to {
+    width: 100%;
+}
+
 .card {
     margin-bottom: 16px;
-    background-color: azure;
+    background-color: #FFFFFF;
+}
+
+.card-active {
+    background-color: #F9F9F9;
 }
 
 .card-img {
     width: 100%;
+}
+
+
+.marketplace-item {
+    display: inline-block;
+    height: 40px;
+    width: 136px;
+    margin-top: 40px;
+}
+
+.marketplace-appstore {
+    background-image: url(/img/app-store@2x.png);
+    background-size: 136px 40px;
+    margin-right: 40px;
+}
+
+.marketplace-googleplay {
+    background-image: url(/img/google-play@2x.png);
+    background-size: 136px 40px;
 }
 
 /* /Blocks
@@ -158,18 +235,150 @@ button {
 /* ---------------   DELIVERY INPUTS   --------------- */
 
 .delivery-input {
-    padding-left: 28px;
+    padding-left: 32px;
     width: 256px;
     height: 40px;
     border: 1px solid #E0E0E0;
     border-radius: 2px;
+    font-size: 13px;
     background-image: url(/img/location.svg);
     background-position: left;
     background-position: 8px;
     background-repeat: no-repeat;
 }
 
+.delivery-xs-input {
+    width: 100%;
+}
+
 /* ---------------   /DELIVERY INPUTS   --------------- */
+
+.search {
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 16px 0 16px 40px;
+    font-size: 13px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    background-image: url(/img/search.svg);
+    background-position: left center;
+    background-position: 8px;
+    background-repeat: no-repeat;
+}
+
+.select-lang {
+    height: 40px;
+    background-color: #3B3B3B;
+    width: 176px;
+    border-radius: 2px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.lang-icon {
+    background-image: url(/img/world.svg);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+.select-lang p {
+    margin-right: 56px;
+}
+
+.select-icon {
+    background-image: url(/img/select.svg);
+    width: 16px;
+    height: 8px;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+.delivery-md__txt {
+    color: #626262;
+    font-size: 13px;
+    padding: 0 8px;
+}
+
+.delivery-xs__txt {
+    display: block;
+    color: #626262;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.hashtag {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.hashtag-green {
+    color: #49A144;
+}
+
+.social li {
+    float: left;
+    margin-right: 24px;
+}
+
+.facebook {
+    display: inline-block;
+    background-image: url(/img/soc/facebook.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+}
+
+.twitter {
+    display: inline-block;
+    background-image: url(/img/soc/twitter.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+}
+
+.instagram {
+    display: inline-block;
+    background-image: url(/img/soc/instagram.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+}
+
+.footer a {
+    font-size: 13px;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+
+.footer-links a:hover {
+    color: #59BD5A;
+}
+
+.menu-links li {
+    margin-bottom: 24px;
+}
+
+.maket-item {
+    background-color: aliceblue;
+    height: 40px;
+    width: 135px;
+}
 
 /* /Elements
 ---------------------------------------------------------------------------------- */
@@ -201,6 +410,17 @@ button {
         background-size: 128px 16px;
     }
 
+}
+
+/* White Logo   --------------- */
+
+.logo-white {
+    display: inline-block;
+    background-image: url(/img/logo-white.svg);
+    background-repeat: no-repeat;
+    width: 192px;
+    height: 24px;
+    background-size: 192px 24px;
 }
 
 /* ---------------   /LOGOS   --------------- */
@@ -247,6 +467,27 @@ button {
 .card-p {
     padding: 0 8px;
 }
+
+.menu h2 {
+    color: #1D1D1D;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 16px;
+}
+
+.menu-categoty {
+    font-size: 14px;
+    color: #626262;
+    padding: 8px 0;
+}
+
+.menu-time {
+    font-size: 13px;
+    color: #1D1D1D;
+    padding-bottom: 24px;
+}
+
+
 
 /* /Modifiers-element
 ---------------------------------------------------------------------------------- */
