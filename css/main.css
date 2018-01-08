@@ -162,7 +162,7 @@ button {
     justify-content: space-between;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 
     .delivery-xs {
         display: none;
@@ -180,6 +180,10 @@ button {
 .card {
     margin-bottom: 16px;
     background-color: #FFFFFF;
+}
+
+.card:hover {
+    background-color: #F9F9F9;
 }
 
 .card-active {
@@ -225,6 +229,14 @@ button {
     background-repeat: no-repeat;
 }
 
+.basket:hover {
+    background-image: url(/img/basket-hover.svg);
+}
+
+.basket:hover {
+    background-image: url(/img/basket-active.svg);
+}
+
 @media (max-width: 576px) {
 
     .basket {
@@ -245,6 +257,16 @@ button {
     background-position: left;
     background-position: 8px;
     background-repeat: no-repeat;
+    transition: border 0.5s;
+}
+
+.delivery-input:hover {
+    border: 1px solid #3b3b3b;
+}
+
+.delivery-input:focus {
+    border: 1px solid #59BD5A;
+    outline: none;
 }
 
 .delivery-xs-input {
@@ -260,9 +282,9 @@ button {
 .search-input {
     width: 100%;
     padding: 16px 0 16px 40px;
-    font-size: 13px;
+    font-size: 16px;
     border: none;
-    border-bottom: 1px solid #757575;
+    border-bottom: 1px solid #A8A8A9;
     background-image: url(/img/search.svg);
     background-position: left center;
     background-position: 8px;
@@ -468,6 +490,12 @@ button {
     padding: 0 8px;
 }
 
+.menu h1 {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
 .menu h2 {
     color: #1D1D1D;
     font-size: 16px;
@@ -478,7 +506,7 @@ button {
 .menu-categoty {
     font-size: 14px;
     color: #626262;
-    padding: 8px 0;
+    padding: 12px 0;
 }
 
 .menu-time {
